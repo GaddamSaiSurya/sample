@@ -1,0 +1,97 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 480px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #2a4d69;
+}
+
+.chat-window {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.chat-message {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 80%;
+}
+
+.user-message {
+  background: #d0ebff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot-message {
+  background: #e6ffe6;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#user-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#file-input {
+  padding: 5px;
+}
+
+#file-name {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: -6px;
+  margin-bottom: 4px;
+}
+
+#mic-btn, #send-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a4d69;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#mic-btn:hover, #send-btn:hover {
+  background-color: #1f3b50;
+}
+
+@media screen and (max-width: 500px) {
+  .chat-container {
+    margin: 10px;
+  }
+}
