@@ -3,19 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Assistant Chatbot</title>
+  <title>Student Assistant</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="chat-container">
-    <h2>Student Assistant Chatbot</h2>
-    <div class="chat-window" id="chat-window"></div>
+    <header class="chat-header">
+      <div class="avatar">🎓</div>
+      <div class="header-info">
+        <h1>Assistant</h1>
+        <p>Student AI</p>
+      </div>
+    </header>
+    <div class="chat-window" id="chat-window">
+      <div class="chat-bubble bot">
+        <p>Hello! I'm your student assistant. How can I help you with your studies today?</p>
+        <span class="timestamp">06:53 PM</span>
+      </div>
+    </div>
     <div class="input-area">
-      <input type="file" id="file-input" accept=".pdf,.docx,.jpg,.jpeg,.png" />
-      <span id="file-name">No file chosen</span>
-      <input type="text" id="user-input" placeholder="Ask a question..." />
-      <button id="mic-btn">🎤</button>
-      <button id="send-btn">Send</button>
+      <label for="file-input" class="file-label">📎</label>
+      <input type="file" id="file-input" hidden />
+      <input type="text" id="user-input" placeholder="Message Assistant..." />
+      <button id="send-btn">➤</button>
     </div>
   </div>
   <script src="script.js"></script>
